@@ -1,5 +1,5 @@
 all: FOOTER.html README.html
-	~/to/Macaulay2/Scripts/index-new-html -t ~/to/Macaulay2/Style/trailer.html -l
+	../../../Scripts/index-new-html -t ../../../Style/trailer.html -l
 README.html : README0.html README1.html
 	rm -f $@
 	cat $^ >$@

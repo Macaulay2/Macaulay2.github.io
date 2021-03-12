@@ -6,6 +6,7 @@ XMLnode _ ZZ := (x,n) -> x.children#n
 length XMLnode := x -> length x.children;
 keylist = apply(separate_"\n" get "search-results-key",x -> separate(tab,x));
 scan(keylist, k -> (
+     	  stderr << "processing " << k << endl;
 	  if k === {""} then return;
 	  century := k#0;
 	  num := k#1;

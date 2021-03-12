@@ -1,11 +1,11 @@
 index:
-	~/to/Macaulay2/Scripts/index-new-html -t ~/to/Macaulay2/Style/trailer.html
-	for i in * ;\
-	do if [ -d "$$i" ] ;\
-	   then ( cd "$$i";\
-		  ~/to/Macaulay2/Scripts/index-new-html -t ~/to/Macaulay2/Style/trailer.html ;\
-		); \
-	   fi ;\
+	../Scripts/index-new-html -t ../Style/trailer.html
+	for i in * ;										\
+	do if [ -d "$$i" ] ;									\
+	   then ( cd "$$i";									\
+		  `pwd`/../../Scripts/index-new-html -t `pwd`/../../Style/trailer.html ;	\
+		);										\
+	   fi ;											\
 	done
 index-local:
-	~/to/Macaulay2/Scripts/index-new-html -l -t ~/to/Macaulay2/Style/trailer.html
+	../Scripts/index-new-html -l -t ../Style/trailer.html

@@ -1,5 +1,5 @@
 include ../Makefile.include
-index: README.html; index-new-html -t ../Style/trailer.html
+index: README.html; `pwd`/../Scripts/index-new-html -t `pwd`/../Style/trailer.html
 README.html: README-top.html README-bottom.html papers.txt Makefile
 	(\
 		cat README-top.html ;\
@@ -9,3 +9,6 @@ README.html: README-top.html README-bottom.html papers.txt Makefile
 papers.txt: joined-references
 	awk -F "	" '{print $$5}' <$< >$@
 	$(MAKE) -C ../Scripts citation-table.js
+joined-references : always
+	$(MAKE) -C Arxiv $@
+always:

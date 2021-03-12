@@ -41,9 +41,9 @@ README.html.tmp: documented-packages README-2.html Makefile ../Makefile.include 
 	 cat README-2.html ;\
 	)
 
-index:; index-new-html -t `pwd`/../Style/trailer.html
+index:; `pwd`/../Scripts/index-new-html -t `pwd`/../Style/trailer.html
 
-index-local:; index-new-html -l -t `pwd`/../Style/trailer.html
+index-local:; ../Scripts/index-new-html -l -t ../Style/trailer.html
 
 
 

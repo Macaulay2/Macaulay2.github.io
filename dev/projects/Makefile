@@ -1,5 +1,5 @@
 include ../../Makefile.include
-index:;	index-new-html -l -s -t ../../Style/trailer.html
+index:;	../../Scripts/index-new-html -l -s -t ../../Style/trailer.html
 all: update comments index-new
 update:;	svn update
 ci:;		svn ci -m 'update projects'

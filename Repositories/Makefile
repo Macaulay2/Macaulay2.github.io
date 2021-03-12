@@ -20,7 +20,7 @@ SUFFIX =
 # Ubuntu repository is at http://us.archive.ubuntu.com/ubuntu/
 
 # SUFFIX=-beta
-default : debian-only index
+default : index
 debian-only : test-signature debian debian-signature
 all: default
 test-signature:
@@ -31,7 +31,7 @@ test-signature:
 # links:
 # 	find . -type d | while read x ; do [ -a "$$x"/index.css ] || ln -v ../index.css "$$x" ; done
 # 	find . -type d | while read x ; do [ -a "$$x"/icon.gif ] || ln -v ../icon.gif "$$x" ; done
-index:; index-new-html -t ~/to/Macaulay2/Style/trailer.html
+index:; `pwd`/../Scripts/index-new-html -t `pwd`/../Style/trailer.html
 
 always : 
 

@@ -1,1 +1,1 @@
-index:;	~/to/Macaulay2/Scripts/index-new-html -t ~/to/Macaulay2/Style/trailer.html -l
+index:;	../Scripts/index-new-html -t ../Style/trailer.html -l

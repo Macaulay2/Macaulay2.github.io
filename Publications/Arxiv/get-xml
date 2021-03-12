@@ -1,5 +1,7 @@
 #! /bin/bash
 
+mkdir -p xml
+
 while read century number arxiv section rest 
 do fn=$century-$number-$section
    (
