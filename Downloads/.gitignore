@@ -1,0 +1,13 @@
+/index.html
+*.dev
+*.sig
+*.tar.bz2
+*.tar.gz
+*.tar.xz
+*.tbz
+*.zip
+*.tgz
+*.deb
+*.rpm
+*.dmg
+*.bz2
