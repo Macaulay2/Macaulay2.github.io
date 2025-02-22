@@ -1,4 +1,6 @@
 main:
+  - title: "Web Interface"
+    url: https://www.unimelb-macaulay2.cloud.edu.au/
   - title: "Documentation"
     url: https://macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/Macaulay2Doc/html/
   - title: "Wiki"
