@@ -1,3 +1,5 @@
 main:
   - title: "Documentation"
     url: https://macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/Macaulay2Doc/html/
+  - title: "Events"
+    url: /events/
